@@ -6,7 +6,7 @@ body {
     margin: 0;
     background: #222;
     font-family: 'Open Sans', sans-serif;
-    background-image: url(https://images.unsplash.com/1600x900/?landscape);
+    background-image: url('https://images.unsplash.com/1600x900/?landscape');
     font-size: 120%;
 }
 
@@ -71,4 +71,19 @@ h1.temp {
     display: flex;
     align-items: center;
 
+}
+
+.weather.loding {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }
